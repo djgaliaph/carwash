@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<title>COIN-OPERATED CAR WASH SYSTEM</title>
+<!-- Favicon-->
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+<!-- Core theme CSS (includes Bootstrap)-->
+<link href="css/styles.css" rel="stylesheet" />
+<link href="./dj/css/styles.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+<link href="assets/vendor/aos/aos.css" rel="stylesheet">
+<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css"> 
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.7.0/css/buttons.dataTables.min.css"> 
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+<!-- Vendor CSS Files -->
+
+
+
+
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+    }
+    nav {
+        background-color: #444;
+        padding: 10px 0;
+        text-align: center;
+    }
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 20px;
+    }
+    nav a:hover {
+        background-color: #555;
+    }
+    .content {
+        padding: 20px;
+    }
+    iframe {
+        width: 100%;
+        height: 400px;
+        border: none;
+    }
+    .left-image {
+        float: left;
+        margin-right: 20px;
+    }
+    .center-image {
+        text-align: center;
+    }
+	#total{
+	color: black;
+  }
+  p {
+    text-align: justify;
+   text-indent: 50px;
+  }
+
+</style>
+</head>
+<body>
+<!-- Responsive navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container px-5">
+        <a class="navbar-brand" href="#!">COIN-OPERATED CAR WASH SYSTEM</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#schematic">Schematic</a></li>
+               <!--  <li class="nav-item"><a class="nav-link" href="#features">Features</a></li> -->
+                <li class="nav-item"><a class="nav-link" href="#graph">Graph</a></li>
+				<li class="nav-item"><a class="nav-link" href="#reports">Reports</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Page Content-->
+<div class="container px-4 px-lg-5">
+    <!-- Heading Row-->
+    <div class="row gx-4 gx-lg-5 align-items-center my-5">
+
+        <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="carwash.jpg" alt="..." /></div>
+        <div class="col-lg-5">
+            <h1 class="font-weight-light">COIN-OPERATED CAR WASH SYSTEM</h1>
+            <p>The use of <b>COIN-OPERATED CAR WASH SYSTEM</b> has become a common and useful way for car owners to maintain the 
+            cleanliness and aesthetic appeal of their vehicles without having to spend the time-consuming effort of manual washing.</p>
+            </div>
+            <hr><br><br>
+    </div>
+    <!-- Call to Action-->
+    <div class="card text-white bg-secondary my-5 py-4 text-center" id="about">
+        <div class="card-body"><h1 class="text-white m-0">About</h1></div>
+    </div>
+
+    <div class="row gx-4 gx-lg-5"> 
+          <h4 class="font-weight-light"><center><b>ABSTRACT</b></center></h4>
+        <p class="card-text">This project included parts such as the coin sensor, vending machine, GSM module, and power wash system, 
+        utilizing the Arduino Uno's full capability as an open-source electronics platform. It enabled the GSM module to receive sensor 
+        data, send SMS messages to the owner's phone number, and identify coin values entered the vending machine. The power wash feature 
+        was designed to run according to the number of minutes per 5-peso coin to ensure the effective use of resources. In addition, 
+        the Blynk application provided owners with the ability to get real-time income updates via SMS notifications, further enhancing 
+        the operation's effectiveness and transparency.</p>
+    </div>
+    <hr><br><br>
+    <div class="row gx-4 gx-lg-5"> 
+        <h4 class="font-weight-light"><center><b>HARDWARE SPECIFICATION</b></center></h4>
+        <p class="card-text"><center>In the development of Coin Operated Car Wash with SMS Notification, 
+        the following were the required hardware specification:</center></p><br><br>
+    
+        <div class="col-lg-6">
+                <h5 class="font-weight-light"><center><b>ARDUINO UNO</b></center></h5>
+                <p>A popular and commonly used microcontroller development board for the Arduino platform is the Arduino Uno. 
+                </p>
+                <center><img class="img-fluid rounded mb-4 mb-lg-0" src="arduino.jpg" alt="..." /></center> <br><br>
+        </div>
+    
+        <div class="col-lg-6">
+                <h5 class="font-weight-light"><center><b>VENDING MACHINE</b></center></h5>
+                <p>It is the machine to be used for coin insertion to have a self-service car wash. 
+                </p><center>
+                <img class="img-fluid rounded mb-4 mb-lg-0" src="vendo.jpg" alt="..." /></center><br><br>
+        </div>
+       
+        <div class="col-lg-6">
+                <h5 class="font-weight-light"><center><b>POWER WASH MACHINE</b></center></h5>
+                <p>Power washing machine or pressure washing machine is the cleaning tool that involves applying a 
+                high-pressure water spray to various surfaces to get rid of dust, filth, mildew, paint that has come 
+                loose, dirt, and other impurities of an automobile. 
+                </p><center>
+                <img class="img-fluid rounded mb-4 mb-lg-0" src="wash.jpg" alt="..." /></center><br><br>
+        </div>
+     
+        <div class="col-lg-6">
+                <h5 class="font-weight-light"><center><b>WATER HOSE</b></center></h5>
+                <p>It is the flexible tube or pipe to be used to transport water from one place to another. 
+                </p><center>
+                <img class="img-fluid rounded mb-4 mb-lg-0" src="hose.jpg" alt="..." /></center><br><br>
+        </div>
+
+        <div class="col-lg-6">
+                <h5 class="font-weight-light"><center><b>MOBILE DEVICE</b></center></h5>
+                <p>It is the device for receiving the SMS notification of the income of the coin-operated car wash. 
+                </p><center>
+                <img class="img-fluid rounded mb-4 mb-lg-0" src="mobile.jpg" alt="..." /></center><br><br>
+        </div>
+
+        <div class="col-lg-6">
+                <h5 class="font-weight-light"><center><b>SIM CARD</b></center></h5>
+                <p>The sim card phone number used as a contact number of which the notification was sent. 
+                </p><center>
+                <img class="img-fluid rounded mb-4 mb-lg-0" src="sim.jpg" alt="..." /></center><br><br>
+        </div>
+
+        <div class="col-lg-6">
+                <h5 class="font-weight-light"><center><b>COIN SLOT</b></center></h5>
+                <p>It was the one to detect the value of the coin being inserted in the vending machine.  
+                </p><center>
+                <img class="img-fluid rounded mb-4 mb-lg-0" src="slot.jpg" alt="..." /></center><br><br>
+        </div>
+      <hr><br><br>
+       <h4 class="font-weight-light"><center><b>CURRICULUM VITAE</b></center></h4>
+          <center><div class="col-lg-81"><img class="img-fluid rounded mb-4 mb-lg-0" src="AYE.jpg" alt="..." /></div></center><hr><br><br>
+          <center><div class="col-lg-81"><img class="img-fluid rounded mb-4 mb-lg-0" src="INTING.jpg" alt="..." /></div></center><hr><br><br>
+          <center><div class="col-lg-81"><img class="img-fluid rounded mb-4 mb-lg-0" src="ARJAY.jpg" alt="..." /></div></center><hr><br><br>
+
+    </div>
+
+   
+
+
+     <div class="card text-white bg-secondary my-5 py-4 text-center" id="schematic">
+        <div class="card-tex"><h1 class="text-white m-0">Schematic Diagram</h1></div>
+    </div>
+    <center>
+    <div class="col-lg-81"><img class="img-fluid rounded mb-4 mb-lg-0" src="diagram.jpg" alt="..." /></div></center><hr><br><br>
+<!--
+    <div class="card text-white bg-secondary my-5 py-4 text-center" id="features">
+        <div class="card-body"><h1 class="text-white m-0">Features</h1></div>
+    </div>
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+<!-- Content Row-->
+<!--
+<div class="row gx-4 gx-lg-5">
+    <div class="col-md-4 mb-5">
+        <div class="card h-100">
+            <div class="card-body">
+                <h2 class="card-title">Card One</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+            </div>
+            <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-5">
+        <div class="card h-100">
+            <div class="card-body">
+                <h2 class="card-title">Card Two</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex natus at dolorem enim! Nesciunt pariatur voluptatem sunt quam eaque, vel, non in id dolore voluptates quos eligendi labore.</p>
+            </div>
+            <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-5">
+        <div class="card h-100">
+            <div class="card-body">
+                <h2 class="card-title">Card Three</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+            </div>
+            <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
+        </div>
+    </div>
+</div>
+-->
+
+
+<div class="card text-white bg-secondary my-5 py-4 text-center" id="graph">
+    <div class="card-body"><h1 class="text-white m-0">Graph</h1></div>
+</div>
+
+
+
+
+<section id="graph" class="clients section-bg">
+    <div class="container" data-aos="fade-up">
+
+      <div class="clients-slider swiper" data-aos="fade-up" data-aos-delay="100">
+        <div class="row">
+
+          
+         <div class="col-md-3">
+		 </div>
+		 <div class="col-md-6">
+		 <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2466983/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+         </div>
+		  <div class="col-md-3">
+		 </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </div>
+  </section><!-- End Clients Section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="reports" class="text-white m-0">
+    <div class="container" id="report_feeds" style="color: white;">
+
+
+      <div class="section-title">
+        <div class="card text-white bg-secondary my-5 py-4 text-center" id="reports"><h1>Reports</h1></div>
+        
+        <h5 id="wire_last"></h5>
+      </div>
+
+      <div class="row">
+        <div class="col-md-5">
+          <div id="DateRange" style="background: white; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; width: 100%; color: black;">
+            <i class="fa fa-calendar"></i>&nbsp;
+            <span></span> <i class="fa fa-caret-down"></i>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <button class="btn btn-primary" onclick="search(1)">Search</button>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="container" style="background-color: white">
+      <br>
+      <div class="section-title" id="div_feeds" style="background-color: white; padding-left: 0px;">
+        <br>
+        <table id="table_status" style="color: black; background-color: white; width: 100%; text-align: center;">
+          
+          <thead>
+            
+        <th>Created At</th>
+        <th>Entry ID</th>
+        <th>Income</th>
+        
+    </thead>
+
+
+    <tbody id="data-table">
+    </tbody>
+    <tfoot>
+        <tr>
+            <th colspan="2">Total Income</th>
+            <th id="total"></th>
+        </tr>
+    </tfoot>
+   
+</table>
+
+
+<br>
+</div>
+</div>
+</section>
+
+    <br>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+
+<!-- Footer-->
+<footer class="py-5 bg-dark">
+    <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; COIN-OPERATED CAR WASH SYSTEM 2024</p></div>
+</footer>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+
+
+
+
+<script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+
+
+
+
+
+  <!-- COPY THIS SCRIPT START -->
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/buttons/1.7.0/js/dataTables.buttons.min.js"></script>
+  <script src="https://cdn.datatables.net/buttons/1.7.0/js/buttons.print.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+  <!-- COPY THIS SCRIPT END -->
+
+</body>
+
+
+<script>
+  var Wireless_LastID;
+  var start = moment().subtract(29, 'days');
+  var end = moment();
+
+  function cb(start, end) {
+      $('#DateRange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+  }
+
+  $('#DateRange').daterangepicker({
+      startDate: start,
+      endDate: end,
+      ranges: {
+        'Today': [moment(), moment()],
+        'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+        'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+        'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+        'This Month': [moment().startOf('month'), moment().endOf('month')],
+        'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+      }
+  }, cb);
+
+  cb(start, end);
+
+  function search(isManual) {
+      var startDate = $('#DateRange').data('daterangepicker').startDate;
+      var endDate = $('#DateRange').data('daterangepicker').endDate;
+
+      $.getJSON('https://api.thingspeak.com/channels/2466983/feeds', function(data) {
+          $.each(data.feeds, function() {
+              Wireless_LastID = this.entry_id;
+              document.getElementById("wire_last").innerHTML = " Last Entry ID " + Wireless_LastID;
+          });
+
+          $.getJSON('https://api.thingspeak.com/channels/2466983/feeds?results=' + Wireless_LastID, function(data) {
+              var feeds = data.feeds.filter(function (obj) {
+                  return moment(obj.created_at) >= startDate && moment(obj.created_at) <= endDate;
+              });
+
+              if (isManual) {
+                  $('#table_status').DataTable().clear().destroy();
+              }
+
+              $('#table_status').DataTable({
+                  dom: 'Bfrtip',
+                  buttons: [
+                      'print'
+                  ],
+                  data: feeds.map(function (obj) {
+                      obj.created_at = moment(obj.created_at).format('MMMM Do YYYY, h:mm:ss a');
+                      return Object.values(obj);
+                  })
+              });
+
+              var sumVal = 0;
+              feeds.forEach(function (obj) {
+                  var incomeValue = parseInt(obj.field2);
+                  if (!isNaN(incomeValue)) {
+                      sumVal += incomeValue;
+                  }
+              });
+              document.getElementById("total").innerHTML = sumVal;
+          });
+      });
+  }
+
+
+
+
+ 
+</script>
+
+
+
+
+
+
+<script>
+  $(document).ready(function() {
+      fetch('https://api.thingspeak.com/channels/2466983/fields/1.json?results=60')
+          .then(response => response.json())
+          .then(data => {
+              const dataPoints = data.feeds;
+              let totalIncome = 0;
+              const tableBody = dataPoints.map(point => {
+                  const date = new Date(point.created_at);
+                  const income = parseFloat(point.field1);
+                  totalIncome += income;
+                  return `
+                      <tr>
+                          <td>${date.toLocaleDateString()}</td>
+                          <td>${date.toLocaleTimeString()}</td>
+                          <td>${income.toFixed(2)}</td>
+                      </tr>
+                  `;
+              }).join('');
+              document.getElementById('data-table').innerHTML = tableBody;
+              document.getElementById('total').innerText = totalIncome.toFixed(2);
+              $('#example').DataTable({
+                  dom: 'Bfrtip',
+                  buttons: [
+                      'copyHtml5',
+                      'excelHtml5',
+                      'csvHtml5',
+                      'pdfHtml5'
+                  ]
+              });
+          });
+  });
+
+
+  search();
+
+</script>
+</html>
